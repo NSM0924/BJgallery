@@ -1,0 +1,432 @@
+body{    
+    /* background-image: url(/BBS/img/gallery/bg1.png); */
+    background-image: url(/img/gallery/bg2.png);
+    /* background-image: url(/BBS/img/gallery/bg3.png); */
+    /* background-image: url(/BBS/img/gallery/bg4.png); */
+    /* background-image: url(/BBS/img/gallery/bg5.png); */
+    /* background-image: url(/BBS/img/gallery/bg6.png); */
+}
+
+.main_sec>div:nth-child(1){
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.plusIcon{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+.plusIcon img{
+    transition: 0.4s;
+    opacity: 0.7;
+    cursor: pointer;
+    width: 130px;
+    height: 130px;
+}
+.plusIcon img:hover{
+    opacity: 1;
+}
+
+
+.submitbtn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #1e2022;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color:  rgb(37, 37, 37);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.submitbtn:hover{
+    color:  #ffffff;
+    background:#3498db;
+}
+
+
+.layer{
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 90;
+}
+.layer>div{
+    border-radius: 30px 30px;
+    background: #fff;
+    width: 600px;
+    padding: 30px;
+    margin: 150px auto;
+}
+.layer h2{
+    display: inline-block;
+    color: #3498db;
+}
+.imgbox{
+    position:relative;
+    text-align:center;
+    height:400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 300px;
+    border: 3px solid black;
+    background-color: rgb(252, 250, 248);
+}
+.imgbox div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.376) 0px 0px 4px 2px;
+}
+
+/* �ݱ� ��ư */
+.layer__btm{
+    margin-top: 13px;
+    float: right;
+    display: inline-block;
+}
+.layer span{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+.mvbtn{
+    margin-top: 40px;
+    transition: 0.4s;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    border-radius: 25px;
+    outline: 0;
+    cursor:pointer;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(46, 46, 46);
+}
+button:hover {
+    background-color: #3498db;
+    color: #f4f4f4;
+}
+
+.update{
+	width: 550px;
+}
+
+.bg_btn{
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 20;
+    padding: 1px 5px;
+    border: 0px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.view__btm{
+    position: absolute;
+    top: 0; right: 0;
+    margin-top: 13px;
+    margin-right: 20px;
+}
+.imgview span{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+.imgview{
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.imgview>div{
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px 30px;
+    background: #fff;
+    width: 1000px;
+    padding: 30px;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.img-box{
+    position:relative;
+    height: 550px;
+    width: 400px;
+}
+.img-box img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.376) 0px 0px 4px 2px;
+}
+.main{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+.img_inf{
+	margin-top: 70px;
+    text-align: center;
+}
+.inf_btn{
+	visibility:hidden;
+}
+.img_inf p{
+	margin-top:30px;
+	margin-bottom: 0;
+}
+
+#mobile_row{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body{
+        overflow: auto;
+        background-image: url(/img/mobile.jpg);
+    }
+    nav{
+        height: 80px;
+        box-shadow: rgb(160 160 160 / 83%) 0px 0px 15px 10px;
+    }
+
+    .bg_btn {
+        display: none;
+    }
+
+    .plusIcon {
+        z-index: 80;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+    }
+    .plusIcon img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .main_sec>div:nth-child(1) {
+        flex-direction: column;
+        width: 93%;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+    .main_imgbox {
+        height: 300px !important;
+        margin: 0 !important;
+        width: auto !important;
+        margin-bottom: 20px !important;
+    }
+    .main_imgbox img {
+        width: 200px !important;
+    }
+
+    .mvbtn{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .imgview{
+        height: auto;
+        z-index: 90;
+    }
+    .imgview>div{
+        border-radius: 0 0;
+        width: auto;
+        margin: 80px auto;
+        height: calc(100% - 80px);
+    }
+    .main{
+        width: 90%;
+        display: block;
+    }
+    .img-box{
+        width: auto;
+        height: 60%;
+    }
+    .img-box img{
+        width: 90%;
+    }
+    .img_inf{
+        margin-top: 0;
+    }
+    .img_inf p {
+        margin-top: 10px;
+    }
+    .img_inf *{
+        margin: 0 0 5px 0;
+    }
+    .inf_btn{
+        height: 0;
+    }
+    #likey1{
+        margin-top: -65px;
+    }
+
+    .layer>div {
+        border-radius: 0 0;
+        width: auto;
+        padding: 0 30px;
+        margin: 80px auto;
+        height: calc(100% - 80px);
+        position: relative;
+    }
+    .layer__btm {
+        margin-top: 17px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 30px;
+    }
+    .imgbox {
+        height: 55%;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    .imgbox div {
+        width: 85%;
+    }
+    .submitbtn {
+        margin: 10px auto;
+        padding: 0;
+    }
+}
+@media (max-height: 550px) {
+    body{
+        overflow: auto;
+        background-image: url(/img/mobile.jpg);
+    }
+    nav{
+        height: 80px;
+        box-shadow: rgb(160 160 160 / 83%) 0px 0px 15px 10px;
+    }
+
+    .bg_btn {
+        display: none;
+    }
+
+    .plusIcon {
+        z-index: 80;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+    }
+    .plusIcon img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .main_sec>div:nth-child(1) {
+        flex-direction: column;
+        width: 93%;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+    .main_imgbox {
+        height: 300px !important;
+        margin: 0 !important;
+        width: auto !important;
+        margin-bottom: 20px !important;
+    }
+    .main_imgbox img {
+        width: 200px !important;
+    }
+
+    .mvbtn{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .imgview{
+        height: auto;
+    }
+    .imgview>div{
+        border-radius: 0 0;
+        width: auto;
+        margin: 80px auto;
+        height: calc(100% - 80px);
+    }
+    .main{
+        width: 90%;
+        display: flex;
+    }
+    .img-box{
+        width: 100%;
+        height: 80%;
+    }
+    .img-box img{
+        width: 42%;
+    }
+    .img_inf{
+        margin-top: 0;
+    }
+    .img_inf p {
+        margin-top: 10px;
+    }
+    .img_inf *{
+        margin: 0 0 5px 0;
+    }
+    .inf_btn{
+        height: 0;
+    }
+    #likey1{
+        margin-top: -65px;
+    }
+
+    .layer h2 {
+        display: none;
+    }
+    .layer>div {
+        border-radius: 0 0;
+        width: auto;
+        padding: 0 30px;
+        margin: 80px auto;
+        height: calc(100% - 80px);
+        position: relative;
+    }
+    .layer__btm {
+        margin-top: 17px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 30px;
+        display: none;
+    }
+    .imgbox {
+        height: 55%;
+        margin-bottom: 10px;
+        width: auto;
+        display: none;
+    }
+    .layer form{
+        display: none;
+    }
+
+    #mobile_row{
+        display: block;
+        text-align: center;
+        padding-top: 20%;
+    }
+
+    .submitbtn {
+        margin: 10px auto;
+        padding: 0;
+    }
+}

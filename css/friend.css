@@ -1,0 +1,99 @@
+#title_box{
+    border:3px solid; 
+    padding:20px;
+    text-align:center
+}
+.friend_box{
+    display: flex;
+    justify-content: space-around;
+}
+.sub_box{
+    width: 350px;
+}
+.sub_box div{
+	cursor: pointer;
+}
+.profile_img{
+    position: relative;
+    z-index: -1;
+    width:90px;
+    height:90px;
+    border: 3px solid #000000;
+    background:#ffffff;
+    border-radius:50%;
+    margin: 25px 0px 40px 25px;
+    background: url(/BBS/img/90x90-1.png);
+}
+.profile_box{
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    border: 3px solid black;
+    left: 100px;
+}
+
+@media (max-width: 600px){
+    body{
+        overflow: auto;
+    }
+    nav{
+        height: 80px;
+        box-shadow: rgb(160 160 160 / 40%) 0px 0px 15px 10px;
+    }
+    
+    #title_box{
+        margin-top: 80px;
+        padding: 10px;
+    }
+    .friend_box{
+        display: block;
+        padding-bottom: 40px;
+    }
+    .sub_box{
+        width: auto;
+    }
+    .profile_img{
+        position: static;
+        width: 70px;
+        height: 70px;
+        margin: 20px 0px 30px 25px;
+    }
+    .profile_box{
+        width: 60%;
+        height: auto;
+        left: 110px;
+    }
+}
+
+@media (max-height: 550px) {
+    body{
+        overflow: auto;
+    }
+    nav{
+        height: 80px;
+        box-shadow: rgb(160 160 160 / 40%) 0px 0px 15px 10px;
+    }
+
+    #title_box{
+        margin-top: 80px;
+        padding: 10px;
+    }
+    .friend_box{
+        display: block;
+        padding-bottom: 40px;
+    }
+    .sub_box{
+        width: auto;
+    }
+    .profile_img{
+        position: static;
+        width: 70px;
+        height: 70px;
+        margin: 20px 0px 30px 25px;
+    }
+    .profile_box{
+        width: 60%;
+        height: auto;
+        left: 110px;
+    }
+}

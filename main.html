@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/likey2.js"></script>
+    <script src="js/viewer.js"></script>
+    <title>범진 갤러리</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__btm">
+                <img src="img/logo.png" alt="" class="openmenu" onclick='openNav()'>
+                <div class="login__btm1" onclick="location.href='';">
+                    <div class="login__btm2">
+                        <p>로그인</p>
+                        <!-- <p>로그아웃</p> -->
+                    </div>
+                </div>
+            </div>    
+        </nav>
+        
+        <!-- 메뉴 -->
+	    <div id="mysidenav" class="sidenav">
+            <img onclick="closeNav()" src="img/logo.png" class="closebtn">
+		    <a href="">랭킹</a>
+            <a href="">My 갤러리</a>
+            <a href="">친구 갤러리 보기</a>
+	    </div>
+    </header>
+    <hr>
+    <section class="rank">
+        <div class="rank_1">
+            <div class="rank_1_img img1">
+                <img src="img/rank/1r.png" class="rank_num_1">
+                <img src="img/KakaoTalk_20210107_202804851.jpg" alt="1" class="main_img1">
+            </div>
+        </div>
+        <div class="rank_2">
+            <div class="rank_2_img1 img2">
+                <img src="img/rank/2r.png" class="rank_num_2">
+                <img src="img/KakaoTalk_20210107_202804851.jpg" alt="2" class="main_img2">
+            </div>
+            <div class="rank_2_img1 img3">
+                <img src="img/rank/3r.png" class="rank_num_2">
+                <img src="img/KakaoTalk_20210107_202804851.jpg" alt="3" class="main_img2">
+            </div>
+            <div class="rank_2_img1 img4">
+                <img src="img/rank/4r.png" class="rank_num_2">
+                <img src="img/KakaoTalk_20210107_202804851.jpg" alt="4" class="main_img2">
+            </div>
+        </div>
+    </section>
+    <section class="imgview" id="viewer1">
+        <div>
+            <div class="view__btm">
+                <a href="" class="view__close close1"><span>X</span></a>
+            </div>
+            <div class="main">
+                <div class="img-box"><img src="img/KakaoTalk_20210107_202804851.jpg" alt=""></div>
+                <div class="img_inf">
+                    <p>제목</p>
+                    <h2>asdf</h2>
+                    <p></p>
+                    <h4>asdf</h4>
+					<input type="text" id="meuserID1" value="" class="inf_btn"><br/>
+					<input type="text" id="userID1" value="" class="inf_btn"><br/>
+					<input type="text" id="title1" value="" class="inf_btn">
+					<div id="likey1"><p>1</p></div>
+					<button onclick="loginAlert();">좋아요</button>
+                	<!-- <input type="button" id="sendButton1" value="좋아요"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="nav_bg"></section>
+</body>
+</html>

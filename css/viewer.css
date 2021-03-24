@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.imgview>div{
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px 30px;
+    background: #fff;
+    width: 1000px;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.img-box{
+    position:relative;
+    height: 550px;
+    width: 400px;
+}
+.img-box img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.376) 0px 0px 4px 2px;
+}
+.main{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
